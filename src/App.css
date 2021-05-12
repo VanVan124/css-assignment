@@ -1,0 +1,373 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url(//db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text);
+.App .App-bot footer .footer-left .logo, .App .App-top .newsfeed .breaking-news-item, .App .App-top .newsfeed .top-feed-left-display, .App .App-top .nav-bar-right .search, .App .App-top .nav-bar-right .weather, .App .App-top .nav-bar-right, .App .nav, .App .sns-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.App {
+  background-color: #fff;
+}
+.App .sns-box {
+  background-color: #EBEBEB;
+  width: 41.4px;
+  height: 41.4px;
+  border-radius: 5px;
+}
+.App .nav {
+  padding: 0 23.5px;
+  height: 11.67px;
+  border-left: #DDDDDD solid 1px;
+}
+.App .nav:first-child {
+  border-left: none;
+}
+.App .newsfeed * {
+  font-family: "SF Pro Text", "Open Sans", sans-serif;
+}
+.App .newsfeed .read-more-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  width: fit-content;
+}
+.App .newsfeed .read-more-button::after {
+  content: "→";
+  margin-left: 8px;
+}
+.App .newsfeed .item-header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+}
+.App .newsfeed .item-detail-small {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  color: #2F2F2F;
+  margin: 10px 0;
+}
+.App .newsfeed .item-detail-large {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+}
+.App .newsfeed .section-header {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 22px;
+}
+.App .newsfeed .wrapper {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+.App .newsfeed .wrapper img {
+  width: 100%;
+  border-radius: 5px;
+}
+.App .newsfeed .wrapper .news-item-small {
+  grid-row: auto/span 1;
+  grid-column: auto/span 1;
+}
+.App .newsfeed .wrapper .news-item-large {
+  grid-row: auto/span 2;
+  grid-column: auto/span 2;
+}
+.App .newsfeed .wrapper .news-item-large .read-more-button {
+  margin-top: 50px;
+}
+.App .App-top {
+  margin: 0 20vw;
+}
+.App .App-top .header {
+  border-bottom: #DDDDDD solid 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.App .App-top .header-left {
+  padding: 15px 0;
+}
+.App .App-top .header-left .logo {
+  color: #6A0B0B;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+}
+.App .App-top .header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.App .App-top .header-right * {
+  margin: 0 4px;
+}
+.App .App-top .header-right .subscribe-box {
+  margin-right: 0;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 0 14px;
+  line-height: 41.4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+.App .App-top .nav-bar {
+  border-bottom: #DDDDDD solid 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+.App .App-top .nav-bar .nav:first-child {
+  font-weight: bold;
+  padding-left: 0;
+}
+.App .App-top .nav-bar * {
+  font-size: 16px;
+}
+.App .App-top .nav-bar-left {
+  display: flex;
+}
+.App .App-top .nav-bar-right .weather {
+  padding-right: 28px;
+  height: 11.67px;
+  border-right: #DDDDDD solid 1px;
+}
+.App .App-top .nav-bar-right .weather-left {
+  padding-right: 10px;
+}
+.App .App-top .nav-bar-right .weather-left svg {
+  fill: #6A0B0B;
+}
+.App .App-top .nav-bar-right .search {
+  padding-left: 27.5px;
+}
+.App .App-top .newsfeed .top-feed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.App .App-top .newsfeed .top-feed-left-bg {
+  width: 35vw;
+  transform: translateX(-20vw);
+  z-index: -10;
+}
+.App .App-top .newsfeed .top-feed-left-display {
+  position: relative;
+}
+.App .App-top .newsfeed .top-feed-left-img {
+  background-color: #E5E5E5;
+  width: 100%;
+  height: 20.25vw;
+  border-radius: 5px;
+  position: absolute;
+}
+.App .App-top .newsfeed .top-feed-left-img img {
+  width: inherit;
+  height: inherit;
+}
+.App .App-top .newsfeed .top-feed-left-img .featured-tag {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+  background: #FFFFFF;
+  border-radius: 0 5px;
+  padding: 10px 12px;
+  display: flex;
+}
+.App .App-top .newsfeed .top-feed-left-img .featured-tag-star {
+  margin-right: 5px;
+}
+.App .App-top .newsfeed .top-feed-left-img .featured-tag-star svg {
+  fill: #D24545;
+}
+.App .App-top .newsfeed .top-feed-left-img .featured-tag p {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+}
+.App .App-top .newsfeed .top-feed-left-header {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 41px;
+}
+.App .App-top .newsfeed .top-feed-left-detail {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 15px;
+}
+.App .App-top .newsfeed .top-feed-left-button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  line-height: 19px;
+  padding: 13px 16px;
+  width: fit-content;
+  border-radius: 5px;
+  background-color: black;
+}
+.App .App-top .newsfeed .top-feed-left-content {
+  margin: 25px 0;
+}
+.App .App-top .newsfeed .top-feed-right {
+  margin: 50px 0 50px 50px;
+}
+.App .App-top .newsfeed .top-feed-right-header {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+}
+.App .App-top .newsfeed .top-feed-right-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.App .App-top .newsfeed .top-feed-right-item {
+  padding: 25px 0;
+  border-bottom: #DDDDDD solid 1px;
+}
+.App .App-top .newsfeed .top-feed-right-item:last-child {
+  border: none;
+}
+.App .App-top .newsfeed .top-feed-right-item .item-detail-small {
+  margin-left: 21px;
+}
+.App .App-top .newsfeed .top-feed-right-item .item-header {
+  display: flex;
+  align-items: center;
+}
+.App .App-top .newsfeed .top-feed-right-item .item-header::before {
+  content: "";
+  background-color: #D24545;
+  width: 6px;
+  height: 43px;
+  margin-right: 15px;
+}
+.App .App-top .newsfeed .breaking-news {
+  display: grid;
+  grid-template: auto auto/1fr 1fr 10vh;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  padding-bottom: 50px;
+}
+.App .App-top .newsfeed .breaking-news-item {
+  border-radius: 5px;
+  border: #DDDDDD solid 1px;
+  padding: 22px 24px;
+}
+.App .App-top .newsfeed .breaking-news-item-wrapper {
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+.App .App-top .newsfeed .breaking-news-item-wrapper:hover {
+  border: #DDDDDD solid 1px;
+}
+.App .App-top .newsfeed .breaking-news-item:hover {
+  background-color: #D24545;
+}
+.App .App-top .newsfeed .breaking-news .news-img {
+  grid-column: 3/span 1;
+  grid-row: 1/span 2;
+  width: calc(100% + 20vw);
+}
+.App .App-top .newsfeed .breaking-news .news-img img {
+  width: 100%;
+  height: 100%;
+}
+.App .App-top .newsfeed .section {
+  border-top: #D24545 4px solid;
+  padding-top: 7px;
+  margin-bottom: 50px;
+}
+.App .App-top .newsfeed .news .news-item-large {
+  grid-column-start: 3 !important;
+  grid-row-start: 1 !important;
+}
+.App .App-top .newsfeed .news .wrapper {
+  display: grid;
+  grid-template: auto auto/repeat(4, 1fr);
+}
+.App .App-top .newsfeed .sex .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.App .App-top .newsfeed .technology .news-item-large {
+  grid-column-start: 1 !important;
+  grid-row-start: 1 !important;
+}
+.App .App-top .newsfeed .technology .wrapper {
+  display: grid;
+  grid-template: auto auto/repeat(4, 1fr);
+}
+.App .App-bot .section {
+  padding: 80px 20vw;
+}
+.App .App-bot .sport {
+  background-color: #FAFAFA;
+}
+.App .App-bot .sport .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.App .App-bot .special {
+  background: #B53838;
+}
+.App .App-bot .special .section-header {
+  color: white;
+}
+.App .App-bot .special .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.App .App-bot footer {
+  background-color: #D24545;
+  padding: 40px 20vw;
+  display: flex;
+  justify-content: space-between;
+}
+.App .App-bot footer * {
+  color: white;
+}
+.App .App-bot footer .footer-left {
+  display: flex;
+  align-items: center;
+}
+.App .App-bot footer .footer-left .logo {
+  width: 71px;
+  height: 71px;
+  border-radius: 35.5px;
+  background-color: #B53838;
+}
+.App .App-bot footer .footer-nav {
+  display: flex;
+}
+.App .App-bot footer .footer-right {
+  display: flex;
+  align-items: center;
+}
+.App .App-bot footer .footer-right * {
+  margin: 0 4px;
+}
+.App .App-bot footer .footer-right .footnote {
+  padding-right: 25px;
+}
+
+/*# sourceMappingURL=App.css.map */
